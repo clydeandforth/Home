@@ -76,3 +76,6 @@ git commit -m "new repository"
 git remote add origin git@github.com:clydeandforth/Home.git
 
 git push -u origin master
+
+# update local repository
+git pull git@github.com:clydeandforth/mefgl.git  master 

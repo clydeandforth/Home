@@ -6,8 +6,6 @@ use warnings;
 
 #usage ./JD_count.pl nucleotides.txt
 
-my ($A, $C, $G, $T) ;
-
 my ($nucleotides) = @ARGV;
 open(IN, "< $nucleotides");
 
@@ -21,5 +19,4 @@ while (my $nucleotides = <IN>) {
 
 close(IN); 
 
-#print ("A=$A\n", "C=$C\n", "G=$G\n", "T=$T\n");
 

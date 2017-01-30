@@ -68,6 +68,8 @@ To git@github.com:clydeandforth/Home.git
 git pull git@github.com:clydeandforth/Home.git  master
 
 # create new repository
+# first, on github, go to the plus sign at top right of webpage, click new repository, called it 'mefgl', then locally;
+
 mkdir mefgl
 cd mefgl
 git init
@@ -77,5 +79,20 @@ git remote add origin git@github.com:clydeandforth/Home.git
 
 git push -u origin master
 
-# update local repository
+# make changes and update local repository
+git add git_workflow.txt 
+git commit -m "changes"
 git pull git@github.com:clydeandforth/mefgl.git  master 
+
+#delete local branch
+git branch -d MEFGL                                                                                                                                               
+Deleted branch MEFGL (was c6e2691)
+
+# delete remote branch
+git push git@github.com:clydeandforth/home.git --delete MEFGL
+
+# switch local branch
+git checkout master
+
+# add all changes
+git add --all

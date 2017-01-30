@@ -4,7 +4,7 @@ dna = TGACGATGGAGCAATCCTCTAGACCTTCTGGCCCTGGCTTCCTGTGAGTCGAGCGAAGCTCGCTAGGTGAATTC
 total = len(dna)
 print(total)
 
-use .count to count the number of "A" etc.
+# use .count to count the number of "A" etc.
 A = dna.count("A")
 T = dna.count("T")
 C = dna.count("C")

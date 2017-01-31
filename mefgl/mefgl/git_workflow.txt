@@ -93,6 +93,3 @@ git push git@github.com:clydeandforth/home.git --delete MEFGL
 
 # switch local branch
 git checkout master
-
-# add all changes
-git add --all

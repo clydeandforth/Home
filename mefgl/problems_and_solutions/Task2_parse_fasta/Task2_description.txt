@@ -1,0 +1,8 @@
+You have been given a FASTA format file (Task2_sequences.fasta) containing 10 sequences.
+
+For each sequence, print to the screen or write to a file the following information:
+    - the name of the sequence (just the AT identifier at the beginning of each sequence header);
+    - the length of the sequence;
+    - the number of occurrences of each base.
+
+The sequences may (will) contain IUPAC ambiguity codes and both upper and lower case characters.  The output can be in any format you like (doesn't have to be a table), but you should get the same values as in the file Task2_results.csv.

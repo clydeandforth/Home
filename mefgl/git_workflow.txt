@@ -96,3 +96,6 @@ git checkout master
 
 # add all changes
 git add --all
+
+# force changes from local to remote
+git push -f home branch

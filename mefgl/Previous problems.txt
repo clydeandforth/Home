@@ -1,0 +1,11 @@
+List of previous problems:
+
+17/01/17
+Counting DNA nucleotides in a string. The dataset was a single string of sequence data. 
+
+31/01/17
+Building on the previous week, the aim of this task was to count DNA nucleotides in a fasta file containing multiple sequences. 
+The challenge was to separate the sequences into separate entities, and pull out the title, length and base counts of each, where sequences may also contain ambiguity codes or lower case letters.
+
+14/02/17
+Transcribing DNA to RNA. The dataset was a single string of DNA sequence data, which needed to be transcribed to RNA by replacing all instances of "T" or "t" with U. 

@@ -4,7 +4,6 @@ use warnings FATAL => 'all';
 use Getopt::Long;
 use Path::Class qw(file);
 use Const::Fast;
-use Smart::Comments;
 #Define reverse complement for all bases including IUPAC
 const my %REV_COMP => ( 'A' => 'T', 'T' => 'A', 'C' => 'G', 'G' => 'C',
 			'R' => 'Y', 'Y' => 'R', 'S' => 'W', 'W' => 'S',
@@ -34,7 +33,6 @@ sub get_sequence{
     my $fh = file( $file )->openr();            #Create filehandle to read file
     while( my $line = $fh->getline() ){         #Read each line of the file
 	chomp $line;                            #Remove newline from end of string
-	### Line: $line
 	$sequence .= $line;                     #Add line to sequence
     }
 
@@ -43,7 +41,6 @@ sub get_sequence{
 
 sub reverse_complement{
     my $sequence = shift;
-    ### Seq: $sequence
     my @bases = split( //, $sequence );                             #Split sequence into an array of individual bases
     my $reverse_complement = "";
     for my $base( reverse @bases ){                                 #Loop through array in reverse order

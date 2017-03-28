@@ -1,3 +1,6 @@
+##### WARNING: THIS DOESN'T QUITE WORK - PROPORTION CALCULATIONS ARE WRONG FOR SOME REASON.
+#####          SCRIPT NEEDS EDITING BEFORE USE.
+
 #!/usr/bin/perl -w
 use strict;
 use warnings;

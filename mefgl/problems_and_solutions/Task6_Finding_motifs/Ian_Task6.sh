@@ -1,3 +1,10 @@
+#!/usr/bin/bash
+
+## Usage: ./Ian_Task6.sh --i <input_file> --o <output_file>
+
+input_file=$2; ## No spaces here or won't work
+output_file=$4;
+
 ## First, make sure input file contains only 2 lines and that the longest line comes first:
 ## Count number of lines in file.
 ## Only continue with the rest of the script if there are exactly 2 lines.
@@ -6,9 +13,9 @@
 ## Sort the lines in reverse numerical order
 ## Cut the 2nd column (to the end of the line) from each line, defining columns as text separated by a space character
 
-NUMOFLINES=$(wc -l < "task6_data.txt") 
+NUMOFLINES=$(wc -l < $input_file)
 if [ $NUMOFLINES = "2" ]; then
-    awk '{ print length($0) " " $0; }' task6_data.txt | \
+    awk '{ print length($0) " " $0; }' $input_file | \
     sort -r -n | \
     cut -d ' ' -f 2- | \
 
@@ -26,5 +33,5 @@ if [ $NUMOFLINES = "2" ]; then
     tr ' ' '    ' | \
     cut -f2 | \
     tr '\n' ' ' \
-    > Ian_Task6_results.txt;
+    > $output_file;
 fi

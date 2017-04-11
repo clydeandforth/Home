@@ -1,3 +1,5 @@
+#!/usr/bin/Rscript
+
 ## Before running, requires:
 
 ## install.packages(stringr)
@@ -6,7 +8,7 @@
 library(stringr)
 
 ## Read in file containing string on 1st line and substring on 2nd line
-seqs <- file("task6_data.txt","r")
+seqs <- file('stdin', 'r');
 
 ## Make variables containing contents of each line
 string <- readLines(seqs,n=1)

@@ -6,7 +6,7 @@ use Path::Class qw(file);
 use Const::Fast;
 #Define reverse complement for all bases including IUPAC
 const my %REV_COMP => ( 'A' => 'T', 'T' => 'A', 'C' => 'G', 'G' => 'C',
-			'R' => 'Y', 'Y' => 'R', 'S' => 'W', 'W' => 'S',
+			'R' => 'Y', 'Y' => 'R', 'S' => 'S', 'W' => 'W',
 			'K' => 'M', 'M' => 'K', 'B' => 'V', 'V' => 'B',
 			'D' => 'H', 'H' => 'D', 'N' => 'N', '.' => '.',
 			'-' => '-' );
